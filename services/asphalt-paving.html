@@ -1259,7 +1259,7 @@
             <div class="col-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-25">
               <div class="icon-box-counter-area">
                 <div class="icon-box">
-                  <i class="fas fa-users"></i>
+                  <i class="fas fa-trophy"></i>
                 </div>
                 <div class="content">
                   <h3><span class="counter">1.55</span>K+</h3>
@@ -1477,8 +1477,8 @@
 
               if (response.ok) {
                 formMessage.textContent =
-                  "Thank you for your message! We'll get back to you soon."
-                formMessage.style.color = '#FFFFFF'
+                  'Thanks for reaching out to MAC Paving and Sealcoating! Our team has received your request and will contact you shortly to confirm your appointment. We look forward to serving you!'
+                formMessage.style.color = '#121C3A'
                 formMessage.style.fontWeight = 'bold'
                 formMessage.style.fontSize = '1.2em'
                 contactForm.reset()
@@ -1488,7 +1488,7 @@
             } catch (error) {
               formMessage.textContent =
                 'Sorry, there was an error submitting your message. Please try again.'
-              formMessage.style.color = 'yellow'
+              formMessage.style.color = 'red'
             }
             formMessage.style.display = 'block'
           })

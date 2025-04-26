@@ -259,7 +259,7 @@
 	========================================*/
 
   AOS.init({
-    duration: 800,
+    duration: 600,
     once: true, // importante para performance
   })
 

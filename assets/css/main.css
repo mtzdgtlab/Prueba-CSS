@@ -62,8 +62,6 @@
 /*  01. THEME DEFAULT CSS START
 /*----------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
@@ -108,7 +106,6 @@ i[class^='flaticon-'],
 /* variables */
 
 :root {
-  --primary-font: 'Inter', sans-serif;
   --secondary-font: 'Roboto', sans-serif;
   --tertiary-font: 'Montserrat', sans-serif;
 
@@ -159,7 +156,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   color: var(--theme-color-1);
   margin-top: 0px;
   line-height: 1.3;
@@ -966,7 +963,7 @@ figure {
 .section-sub-title {
   position: relative;
   color: var(--theme-color);
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1001,7 +998,7 @@ figure {
 .section-sub-titletres {
   position: relative;
   color: #d0e5f5;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-size: 35px;
   font-style: normal;
   font-weight: 600;
@@ -1034,7 +1031,7 @@ figure {
 .section-sub-titledos {
   position: relative;
   color: #ffffff;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -2259,7 +2256,7 @@ figure {
 
 .header-link-1 .content span {
   color: var(--theme-color-1);
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -3627,7 +3624,7 @@ p.banner-text {
   justify-content: start;
   align-items: center;
   gap: 6px;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -3707,6 +3704,12 @@ p.banner-text {
 /*----------------------------------------*/
 /*  CTA 1 CSS START
 /*----------------------------------------*/
+.cta-1-section .content .cta-phone {
+  font-family: var(--tertiary-font);
+  font-weight: 800;
+  font-size: 50px;
+  justify-content: center;
+}
 
 .cta-1-section:before {
   content: '';
@@ -3762,6 +3765,8 @@ p.banner-text {
 }
 
 .cta-1-section .content h2 {
+  font-size: 30px;
+  font-family: var(--secondary-font);
   position: relative;
   z-index: 1;
 }
@@ -3832,6 +3837,7 @@ p.banner-text {
     .cta-1-section h3 {
       font-size: 30px;
       text-align: center;
+      justify-content: center;
     }
 
     .cta-1-section .content {
@@ -4781,7 +4787,7 @@ p.banner-text {
 
 .service-tab-btn-area ul .nav-link {
   position: relative;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   color: var(--theme-color-1);
   font-size: 20px;
   font-style: normal;
@@ -4972,7 +4978,7 @@ p.banner-text {
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
   border-radius: 50%;
   font-size: 16px;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5662,7 +5668,7 @@ p.banner-text {
   font-weight: 600;
   line-height: 26px;
   text-transform: uppercase;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
   background: #f8f8f8;
   padding: 12px 0;
   position: relative;
@@ -6431,262 +6437,6 @@ ul.team-member-socials-icon li:hover {
 @media only screen and (max-width: 991px) {
   .pagination__wrapper {
     margin-bottom: 50px;
-  }
-}
-
-/*----------------------------------------*/
-/* BLOG DETAILS CSS START
-/*----------------------------------------*/
-
-.blog-widget-1,
-.blog-widget-2,
-.blog-widget-3,
-.blog-widget-4 {
-  background: #f8f8f8;
-  padding: 40px 30px;
-}
-
-.blog-widget-title:before {
-  content: '';
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background: var(--theme-color);
-}
-
-.blog-widget-1 button {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  font-size: 20px;
-  transform: translateY(-50%);
-}
-
-.blog-widget-1 input[type='text'] {
-  width: 100%;
-  height: 60px;
-  border: none;
-  padding: 15px 20px;
-  outline: none;
-}
-
-.blog-widget-2 ul.blog-categories-list li a {
-  padding: 20px;
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.blog-widget-2 ul.blog-categories-list li:hover a {
-  background: var(--theme-color);
-  color: #fff;
-}
-
-.blog-widget-2 ul.blog-categories-list li {
-  margin-bottom: 16px;
-}
-
-.blog-widget-2 ul.blog-categories-list li:last-child {
-  margin-bottom: 0;
-}
-
-.blog-widget-3 .blog-post-sidebar {
-  margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 80px auto;
-  gap: 15px;
-}
-
-.blog-widget-3 .blog-post-sidebar:last-child {
-  margin-bottom: 0px;
-}
-
-.blog-widget-3 .content span {
-  font-size: 14px;
-  color: #1a3164;
-}
-
-.blog-widget-3 .content span i {
-  color: var(--theme-color);
-  margin-right: 5px;
-}
-
-.blog-widget-3 .content h6 {
-  font-size: 16px;
-}
-
-.blog-widget-4 .tagcloud a {
-  display: inline-block;
-  font-size: 14px;
-  padding: 12px;
-  background: #fff;
-  margin-right: 8px;
-  margin-bottom: 6px;
-  line-height: 1;
-}
-
-.blog-widget-4 .tagcloud a:hover {
-  color: #fff;
-  background: var(--theme-color);
-}
-
-.blog-widget-4 .tagcloud a:nth-last-child(1),
-.blog-widget-4 .tagcloud a:nth-last-child(2),
-.blog-widget-4 .tagcloud a:nth-last-child(3) {
-  margin: 0;
-}
-
-.blog-details-page ul.blog-post-meta {
-  display: flex;
-  justify-content: flex-start;
-  gap: 26px;
-  font-size: 14px;
-  color: #1a3164;
-}
-
-.blog-details-page ul.blog-post-meta li i {
-  font-size: 16px;
-  margin-right: 10px;
-  color: var(--theme-color);
-}
-
-blockquote {
-  border-left: 4px solid var(--theme-color);
-  background: var(--Bg_Color, #f8f8f8);
-  padding: 32px 70px 32px 40px;
-}
-
-blockquote p {
-  font-weight: 600;
-  font-style: italic;
-  color: #102039;
-  text-transform: capitalize;
-}
-
-blockquote i {
-  font-size: 36px;
-  color: var(--theme-color);
-  position: absolute;
-  bottom: -20px;
-  right: -10px;
-}
-
-.tagcloud.tagcloud-sm span {
-  font-weight: 600;
-}
-
-.tagcloud.tagcloud-sm a {
-  font-size: 14px;
-  padding: 12px 16px;
-  background: #f8f8f8;
-  margin-left: 10px;
-}
-
-.tagcloud.tagcloud-sm a:hover {
-  background: var(--theme-color);
-  color: #fff;
-}
-
-.postbox__share span {
-  font-weight: 600;
-}
-
-.postbox__share a {
-  font-size: 16px;
-  color: #1a3164;
-  margin-left: 10px;
-}
-
-.postbox__share a:hover {
-  color: var(--theme-color);
-}
-
-.postbox__share-wrapper {
-  padding: 25px 0;
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
-}
-
-.postbox__comment-avatar img {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-}
-
-.post-box-comments-box {
-  display: grid;
-  grid-template-columns: 100px auto;
-  gap: 20px;
-}
-
-.postbox__comment-name h5 {
-  font-size: 20px;
-  margin-bottom: 15px;
-  margin-top: 20px;
-}
-
-.postbox__comment-name span {
-  color: #1a3164;
-}
-
-.postbox__comment-reply a {
-  border-radius: 20px;
-  background: rgba(234, 24, 38, 0.06);
-  padding: 10px 16px;
-  color: var(--theme-color);
-  font-size: 14px;
-}
-
-ul.postbox__comment_ratings {
-  display: flex;
-  gap: 5px;
-  position: absolute;
-  top: 35px;
-  right: 0;
-  color: var(--theme-color);
-}
-
-.postbox__comment-form label {
-  font-weight: 500;
-  font-family: var(--primary-font);
-  margin-bottom: 15px;
-}
-
-.postbox__comment-form input[type='text'],
-.postbox__comment-form input[type='email'] {
-  border-radius: 4px;
-  border: 1px solid #ececec;
-  padding: 18px 20px;
-  height: 55px;
-  margin-bottom: 30px;
-}
-
-.postbox__comment-form textarea {
-  border-radius: 4px;
-  border: 1px solid #ececec;
-  height: 200px;
-  resize: none;
-  margin-bottom: 30px;
-}
-
-@media only screen and (max-width: 991px) {
-  .postbox__comment-form {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .post-box-comments-box {
-    display: flex;
-    gap: 0;
-    flex-direction: column;
-  }
-
-  ul.postbox__comment_ratings {
-    right: 100px;
   }
 }
 

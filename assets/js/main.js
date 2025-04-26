@@ -1,3 +1,13 @@
+/*-----------------------------------------------------------------------------------
+
+  Theme Name: Gramen - Roofing Services HTML5 Template
+  Author: Gramentheme
+  Support: https://gramentheme.com/contact-us/
+  Description: Gramen - Roofing Services HTML5 Template
+  Version: 1.0
+
+-----------------------------------------------------------------------------------
+
 /************ TABLE OF CONTENTS ***************
 
 1. Preloader activation
@@ -155,6 +165,25 @@
   })
 
   /*======================================
+	 Cart Quantity Js
+	========================================*/
+  $('.cart-minus').click(function () {
+    var $input = $(this).parent().find('input')
+    var count = parseInt($input.val()) - 1
+    count = count < 1 ? 1 : count
+    $input.val(count)
+    $input.change()
+    return false
+  })
+
+  $('.cart-plus').click(function () {
+    var $input = $(this).parent().find('input')
+    $input.val(parseInt($input.val()) + 1)
+    $input.change()
+    return false
+  })
+
+  /*======================================
 	MagnificPopup image view
 	========================================*/
 
@@ -197,6 +226,18 @@
       })
     }
   })
+
+  //LightBox / Fancybox
+
+  // if($('.lightbox-image').length) {
+  // 	$('.lightbox-image').fancybox({
+  // 		openEffect  : 'fade',
+  // 		closeEffect : 'fade',
+  // 		helpers : {
+  // 			media : {}
+  // 		}
+  // 	});
+  // }
 
   /*======================================
 	MagnificPopup video view

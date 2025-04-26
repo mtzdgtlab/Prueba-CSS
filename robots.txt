@@ -1,0 +1,64 @@
+User-agent: *
+
+# Permitir indexación de páginas clave
+Allow: /index.html
+Allow: /contact.html
+Allow: /services.html
+
+# Categorías principales
+Allow: /services/asphalt-paving.html
+Allow: /services/concrete.html
+Allow: /services/landscaping.html
+Allow: /services/pavers.html
+Allow: /services/sealer.html
+
+# Subpáginas individuales de servicio
+Allow: /services/asphalt-paving/extension.html
+Allow: /services/asphalt-paving/installation.html
+Allow: /services/asphalt-paving/replacement.html
+Allow: /services/asphalt-paving/resurfacing.html
+
+Allow: /services/concrete/aprons.html
+Allow: /services/concrete/curbs.html
+Allow: /services/concrete/sidewalks.html
+Allow: /services/concrete/walkways.html
+
+Allow: /services/landscaping/drainage.html
+Allow: /services/landscaping/hauling.html
+Allow: /services/landscaping/power-wash.html
+Allow: /services/landscaping/sod-installation.html
+Allow: /services/landscaping/top-soil.html
+
+Allow: /services/pavers/belgium-blocks.html
+Allow: /services/pavers/installation.html
+Allow: /services/pavers/maintenance.html
+
+Allow: /services/sealer/crack-filling.html
+Allow: /services/sealer/line-striping.html
+Allow: /services/sealer/sealcoating.html
+
+# Permitir imágenes SEO-relevantes
+Allow: /assets/imgs/service/
+Allow: /assets/imgs/service/asphalt-paving/
+Allow: /assets/imgs/service/concrete/
+Allow: /assets/imgs/service/landscaping/
+Allow: /assets/imgs/service/pavers/
+Allow: /assets/imgs/service/sealer/
+Allow: /assets/imgs/favicon/
+
+# Bloquear recursos estáticos no necesarios para indexación
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /assets/fonts/
+# Nota: eliminamos Disallow global de /assets/imgs/ para no bloquear subcarpetas importantes
+
+# Archivos no útiles para SEO
+Disallow: /404.html
+Disallow: /README
+
+# Evitar indexación de formatos no críticos
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Sitemap
+Sitemap: https://macpavingandsealcoating.com/sitemap.xml

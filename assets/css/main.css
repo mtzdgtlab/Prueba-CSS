@@ -454,7 +454,7 @@ figure {
 }
 @media (max-width: 450px) {
   .offcanvas__info {
-    width: 340px;
+    width: 300px;
   }
 }
 .offcanvas__info.info-open {
@@ -466,6 +466,7 @@ figure {
   transform: translateX(0);
 }
 .offcanvas__logo a img {
+  width: 100%;
   max-width: 175px;
   height: auto;
   display: block;
@@ -520,6 +521,9 @@ figure {
 .offcanvas__search button:hover {
   color: var(--theme-color);
 }
+.offcanvas__text p {
+  margin-bottom: 25px;
+}
 .offcanvas__contact h4 {
   font-size: 22px;
   margin-bottom: 20px;
@@ -535,8 +539,8 @@ figure {
   background-color: var(--theme-color-1);
 }
 .offcanvas__contact-icon i {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -562,14 +566,12 @@ figure {
   z-index: 5;
 }
 .offcanvas__contact-text a {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   color: #fff;
-  word-break: break-word;
-  overflow-wrap: anywhere;
 }
 .offcanvas__contact-text a:hover {
-  color: #00e1ff;
+  color: var(--theme-color);
 }
 .offcanvas__social {
   margin-bottom: 30px;
@@ -608,6 +610,42 @@ figure {
   border: 1px solid var(--theme-color-1);
   background-color: var(--theme-color-1);
 }
+.offcanvas__notification-icon a {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+}
+.offcanvas__notification-icon a .notification-count {
+  position: absolute;
+  top: -4px;
+  right: -13px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 22px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: var(--theme-color);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+.offcanvas__notification-text p {
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #fff;
+  font-size: 14px;
+}
+.offcanvas__notification-text p .notification-number {
+  color: var(--theme-color);
+}
+.offcanvas__notification-text p a {
+  color: var(--theme-color);
+}
 .offcanvas__overlay {
   position: fixed;
   height: 100%;
@@ -642,6 +680,18 @@ figure {
 .sidebar__toggle:hover .bar-icon span,
 .sidebar__toggle:hover .bar-icon span small {
   background: #fff;
+}
+
+@media (max-width: 992px) {
+  .app__offcanvas-overlay.overlay-open {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
+  }
 }
 
 .offcanvas__contact-icon {
@@ -1417,6 +1467,10 @@ figure {
 
 .header-top-socials span:hover > a {
   color: var(--theme-color);
+}
+
+.header-style-two .sidebar__toggle .bar-icon {
+  color: #fff;
 }
 
 /* .header-style-two .sidebar__toggle,
@@ -2998,6 +3052,40 @@ p.banner-text {
 /*----------------------------------------*/
 /*  BLOG STYLE ONE CSS START
 /*----------------------------------------*/
+.blog-widget-3 .blog-post-sidebar {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 80px auto;
+  gap: 15px;
+}
+
+.blog-widget-3 .blog-post-sidebar:last-child {
+  margin-bottom: 0px;
+}
+
+.blog-widget-3 .content span {
+  font-size: 14px;
+  color: #1a3164;
+}
+
+.blog-widget-3 .content span i {
+  color: var(--theme-color);
+  margin-right: 5px;
+}
+
+.blog-widget-3 .content h6 {
+  font-size: 16px;
+}
+
+.blog-widget-4 .tagcloud a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 12px;
+  background: #fff;
+  margin-right: 8px;
+  margin-bottom: 6px;
+  line-height: 1;
+}
 
 /* shine start */
 /* shine end */
@@ -3362,7 +3450,36 @@ ul.service-details-page-list li {
   font-weight: 500;
   margin-bottom: 10px;
 }
+.service-widget-1 {
+  background: #f8f8f8;
+  padding: 40px 30px;
+}
 
+.service-widget-1 h5 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.service-widget-1 li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+}
+
+.service-widget-1 li .active {
+  background: var(--theme-color);
+  color: #fff;
+}
+
+.service-widget-1 li {
+  margin-bottom: 16px;
+}
+
+.service-widget-1 li:last-child {
+  margin-bottom: 0px;
+}
 /*----------------------------------------*/
 /* PROJECTS PAGE CSS START
 /*----------------------------------------*/
